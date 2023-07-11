@@ -2,26 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-
+    <title>Document</title>
     <style>
-       .body{
-         margin: 0;
-       }
-       .login{
-         height: 100%;
-         width: 100%;
-         display: grid;
-         place-items: center; 
 
+       :root {
+          --white: #FFFFFF;
+          --black: #000000;
+          --very-light-pink: #C7C7C7;
+          --text-input-field: #F7F7F7;
+          --hospital-green: #ACD9B2;
+          --sm: 14px;
+          --md: 16px;
+          --lg: 18px;
+        }
+
+       .body{
+          margin: 0;
+          font-family: 'Quicksand', sans-serif;
        }
+
+       .login{
+          width: 100%;
+          height: 100vh;
+          display: grid;
+          place-items: center;
+       }
+       .form-container{
+          display: grid;
+          grid-template-rows: auto 1fr auto;
+          width: 300px;
+       }
+       .logo {
+         width: 150px;
+         margin-bottom: 48px;
+         justify-self: center;
+         display: none;
+       }
+       
     </style>
   </head>
   <body>
